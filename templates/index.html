@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html class="no-js"> 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Travel &mdash; </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/superfish.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/cs-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/cs-skin-border.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="/"><i class="icon-airplane"></i>Travel</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="hotspot">Hottest Spot</a></li>
+							<li><a href="team">Team</a></li>
+							<li><a href="contact">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- end:header-top -->
+	
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" 
+			style="background-image: url(/static/images/hero_bg_1.jpg);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5 col-md-5">
+								<div class="tabulation animate-box">
+
+								  <!-- Nav tabs -->
+								   <ul class="nav nav-tabs" role="tablist">
+								      <li role="presentation" class="active">
+								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Pick a Destinations</a>
+								      </li>
+								   </ul>
+
+								   <!-- Tab panes -->
+									<div class="tab-content">
+									 <div role="tabpanel" class="tab-pane active" id="flights">
+										<div class="row">
+											<form method="POST" action="/">
+												<div class="col-sm-12 mt">
+													<section>
+														<label for="city">Region</label>
+														<select class="cs-select cs-skin-border" name="city" id="city" required>
+															<option value="" disabled selected hidden>Please Choose....</option>												
+															<option value="Ashanti Region">Ashanti Region</option>
+															<option value="Bono East Region">Bono East Region</option>
+															<option value="Brong Ahafo Region">Brong Ahafo</option>
+															<option value="Central Region">Central Region</option>
+															<option value="Eastern Region">Eastern Region</option>
+															<option value="Greater Accra Region">Greater Accra Region</option>
+															<option value="Northern East Region">Northern East Region</option>
+															<option value="Northern Region">Northern Region</option>
+															<option value="Oti Region">Oti Region</option>
+															<option value="Savanah Region">Savanah Region</option>
+															<option value="Upper East Region">Upper East Region</option>
+															<option value="Upper West Region">Upper West Region</option>
+															<option value="Volta Region">Volta Region</option>
+															<option value="Western Region">Western Region</option>
+														</select>
+													</section>
+												</div>
+	
+												<div class="col-sm-12 mt">
+													<section>
+														<label  for="type">Category</label>
+														<select class="cs-select cs-skin-border " name="type" id="type" required>
+															<option value="" disabled selected hidden>Please Choose....</option>
+															<option value="Eco tourism" >Ecotourism</option>
+															<option value="Nature">Nature</option>
+															<option value="Heritage">Heritage</option>
+															<option value="Culture">Culture</option>
+															<option value="Adventure">Adventure</option>
+														</select>
+													</section>
+												</div>
+	
+												<div class="col-xxs-12 col-xs-12 mt">
+													<div class="input-field">
+														<label for="number">Number of Locations</label>
+														<input type="number" id="number" name="number" min="1" required class="form-control"/>
+													</div>
+												</div>
+	
+												<div class="col-xs-12">
+													<input type="submit" value="Recommend" class="btn btn-primary btn-block" >
+												</div>
+											</form>
+										
+										</div>
+									 </div>
+
+								
+									</div>
+
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+
+		<div id="fh5co-features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 animate-box">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-streetsign"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Ecotourism</h3>
+								<p>Ecotourism is a type of tourism that focuses on sustainable travel to natural areas, with the goal of helping to conserve the environment and the local communities.</p>
+								<p>Examples: 
+									<a href="https://www.google.com/search?q=kakum+national+park&oq=kakum+national+park&aqs=chrome.0.69i59j69i64j0i512l3j69i60l3.4096j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Kakum National Park</a>,
+									<a href="https://molenationalpark.org/" target="_blank">Mole National Park</a>,
+									<a href="https://www.google.com/search?q=Boabeng-Fiehma+Monkey+Sanctuary&oq=Boabeng-Fiehma+Monkey+Sanctuary&aqs=chrome..69i57.664j0j4&sourceid=chrome&ie=UTF-8" target="_blank">Boabeng-Fiehma Monkey Sanctuary</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-telescope"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Adventure</h3>
+								<p>Adventure tourism refers to travel activities that involve exploration, excitement, and physical challenges in natural or cultural environments. </p>
+								<p>
+									Examples:
+									<a href="https://www.google.com/search?q=kakum+national+park&oq=kakum+national+park&aqs=chrome.0.69i59j69i64j0i512l3j69i60l3.4096j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Kakum National Park</a>,
+									<a href="https://en.wikipedia.org/wiki/Tafi_Atome_Monkey_Sanctuary" target="_blank">The Tafi Atome Monkey Sanctuary</a>,
+									<a href="https://en.wikipedia.org/wiki/Bui_National_Park" target="_blank">Bui National Park</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-camera"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Nature</h3>
+								<p>Nature tourism, also known sustainable tourism, focuses on experiencing and appreciating natural environments while minimizing negative impacts on the environment and supporting local communities.</p>
+								<p>
+									Examples:
+									<a href="https://en.wikipedia.org/wiki/Wli_waterfalls" target="_blank">Wli Waterfalls</a>,
+									<a href="https://en.wikipedia.org/wiki/Lake_Bosumtwi" target="_blank">Lake Bosomtwe</a>,
+									<a href="https://en.wikipedia.org/wiki/Aburi_Botanical_Gardens" target="_blank">Aburi Botanical Gardens</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-wine"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Heritage</h3>
+								<p>Heritage tourism is a form of travel that focuses on experiencing and appreciating the  historical, and traditional aspects of a destination.</p>
+								<p>
+									Examples:
+									<a href="https://en.wikipedia.org/wiki/Cape_Coast_Castle" target="_blank">Cape Coast Castle</a>,
+									<a href="https://en.wikipedia.org/wiki/Elmina_Castle" target="_blank">Elmina Castle</a>,
+									<a href="https://en.wikipedia.org/wiki/Larabanga_Mosque" target="_blank">Larabanga Mosque</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-map-pin"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Culture</h3>
+								<p>Culture refers to the shared beliefs, customs, traditions, values, language, arts, and social behaviors of a particular group of people. </p>
+								<p>
+									Examples:
+									<a href="https://jetsanza.com/monument-of-slavery-nalerigu-defence-wall/" target="_blank">Nalerigu Slave Market</a>,
+									<a href="https://en.wikipedia.org/wiki/Gambaga_Witch_camp" target="_blank">Gambaga Witches Camp</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-4 col-sm-4 col-xs-12 fh5co-footer-link">
+							<h3>About Travel</h3>
+							<p>To enhance the travel experience for users by providing personalized and relevant suggestions for destinations, attractions, accommodations, and activities. </p>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+							<h3>Links</h3>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Hottest Spot</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+							<h3>Hottest Spot</h3>
+							<ul>
+								<li><a href="#">Cape Coast Castle</a></li>
+								<li><a href="#">Labadi Beach</a></li>
+								<li><a href="#">Elmina Castle</a></li>
+								<li><a href="#">Kakum National Park</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+							<h3>Tour Category</h3>
+							<ul>
+								<li><a href="#">Ecotourism</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Nature</a></li>
+								<li><a href="#">Heritage</a></li>
+								<li><a href="#">Culture</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+							<h3>Follow Us</h3>
+							<ul>
+								<p class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter2"></i></a></li>
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="#"><i class="icon-youtube"></i></a></li>
+									
+								</p>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							
+							<p>Copyright 2023 All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/sticky.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/superfish.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/magnific-popup-options.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/selectFx.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</body>
+</html>
+
